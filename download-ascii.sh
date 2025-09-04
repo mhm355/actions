@@ -2,6 +2,6 @@
 
 sudo apt install cowsay -y
 
-cowsay -f dragon "hello i`am the dragon! ">dragon.txt
+cowsay -f dragon "hello iam the dragon! ">dragon.txt
 
 ls -ltra

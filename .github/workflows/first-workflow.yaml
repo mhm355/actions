@@ -9,12 +9,11 @@ jobs:
         - name: Add Checkout action
           uses: actions/checkout@v5
 
-        - name: welcome to ubuntu
-          run: echo welcome to ubuntu
-
-        - name: list files
-          run: ls -a
+        - name: list all files
+          run: ls -ltra
           
-        - name: read file content
-          run: cat README.md
-
+        - name: download ascii 
+          run: |
+            chmod +x downlaod-ascii.sh
+            ./downlaod-ascii.sh
+            ls -ltr

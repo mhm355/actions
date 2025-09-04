@@ -6,7 +6,15 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+        - name: Add Checkout action
+          uses: actions/checkout@v5
+
         - name: welcome to ubuntu
           run: echo welcome to ubuntu
+
+        - name: list files
+          run: ls -a
+          
         - name: read file content
           run: cat README.md
+

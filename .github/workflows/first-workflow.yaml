@@ -11,9 +11,9 @@ jobs:
 
         - name: list all files
           run: ls -ltra
-          
+
         - name: download ascii 
           run: |
-            chmod +x downlaod-ascii.sh
-            ./downlaod-ascii.sh
+            chmod +x download-ascii.sh
+            ./download-ascii.sh
             ls -ltr
